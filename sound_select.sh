@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the directory to search for SF2/SFZ files
-dir=~/Sound\ Font
+dir=~/Sound\ Fonts
 
 # Use find to search for SF2/SFZ files in the directory and its subdirectories
 sf_files=$(find "$dir" \( -iname '*.SF2' -o -iname '*.SFZ' \) -type f)
