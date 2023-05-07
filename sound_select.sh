@@ -41,3 +41,7 @@ fi
 
 # Get the full path to the chosen file
 chosen_file=$(echo "$sf_files" | sed "${choice}q;d")
+
+# Run the sfizz_jack command with the chosen file's path
+echo "Great choice! Let's get creative with the ${chosen_file##*/} sound..."
+sfizz_jack "$chosen_file"
